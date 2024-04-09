@@ -1,0 +1,175 @@
+body{
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template: 100px 15px 15px auto/40px auto 40px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+h1{
+  font-size: 42px;
+}
+header{
+  position: relative;
+background-image: url(top.png);
+background-position: 10% 20%;
+opacity: 2;
+background-size: cover;
+grid-row: 1/3;
+grid-column: 1/-1;
+height: 100%;
+z-index: 1;
+}
+main{
+  padding-top: 30px;
+  z-index: 1;
+  background-color:#121212;
+  grid-row: 3/-1;
+  grid-column: 1/-1;
+}
+.inputfiel{
+  background-color: blue;
+  grid-row: 2/4;
+  grid-column: 2/3;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2e2e2f;
+  border-radius: 6px;
+  align-items: center;
+  border: none;
+  box-sizing: border-box;
+}
+.container{
+  padding: 0px 40px;
+  height: 100%;
+}
+
+.flexheader{
+  width: 100%;
+  position: relative;
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#addbtn a{
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+.fillter{
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.inputfiel i, .inputfiel input, .inputfiel button{
+  height: 100%;
+} 
+button{
+  border-radius: 0 4px 4px 0;
+  border: none;
+  width: 30%;
+
+  background-color: #4B4B4B;
+}
+input{
+  width: 100%;
+  padding: 0px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  background-color:  #2e2e2f;
+}
+.inputfiel > i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  background-color: #2E2E2F;
+  color: #9CA3AF;
+  border-radius: 4px 0px 0px 4px;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2E2E2F;
+  flex-direction: column;
+}
+.content i{
+  font-size: 50px;
+}
+.content p{
+  font-size: 18px;
+  margin: 0;
+}
+.boxmovie img{
+  width: 100px;
+}
+.boxmovie  h1{
+  font-size: 18px;
+}
+.boxmovie p{
+  font-size: 14px;
+}
+.timemovie p, .timemovie a{
+  font-size: 12px;
+}
+.listmovie{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.listmovie > div:last-child{
+  border-bottom: none;
+}
+.boxmovie{
+  display: flex;
+  color: white;
+  gap: 20px;
+  border-bottom: 1.5px solid #2C2C2C;
+  padding: 20px 0;
+}
+.timemovie{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.timemovie a {
+  color: white;
+  display: inline-block;
+}
+.textColor{
+  color: #A5A5A5;
+}
+#myWacthList{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.textmwl{
+  color: #787878;
+  align-self: center;
+  text-align: center;
+}
+.textmwl > h5{
+  margin: 0;
+}
