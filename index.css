@@ -184,3 +184,6 @@ input{
 .textmwl > h5{
   margin: 0;
 }
+.addlist{
+  text-wrap: nowrap;
+}

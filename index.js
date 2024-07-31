@@ -17,9 +17,9 @@ function renderList(arr){
     const indexRender = localWatchlist.findIndex(istheid)
 
     if(indexRender !== -1){
-      htmlADd =` <a data-idd=${itemId}  id=id-${itemId}> - Watchlist</a>`
+      htmlADd =` <a class='addlist'  data-idd=${itemId}  id=id-${itemId}> - Watchlist</a>`
     }else{
-      htmlADd =` <a data-idd=${itemId} id=id-${itemId}> + Watchlist</a>`
+      htmlADd =` <a class='addlist' data-idd=${itemId} id=id-${itemId}> + Watchlist</a>`
  
     }
 
@@ -105,7 +105,7 @@ function renderWatchList(arr){
       <div class="timemovie">
         <p>${element.Runtime}</p>
         <p>${element.Genre}</p>
-        <a data-deletelist=${element.imdbID}  id=id-${element.imdbID}> - Watchlist</a>
+        <a class='addlist' data-deletelist=${element.imdbID}  id=id-${element.imdbID}> - Watchlist</a>
       </div>
       <p class='textColor'>${element.Plot}</p>
     </div>
